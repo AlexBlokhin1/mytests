@@ -1,0 +1,25 @@
+#!/usr/bin/env
+
+
+
+class MyFirstClass():
+
+    # constructor
+    def __init__(self, color="red"):
+        self.color = color
+        pass
+
+    def __str__(self):
+        return  "HEHHEE"
+
+    def greeting(self):
+        print('Hello - my color is {}'.format(self.color))
+
+    def goodbye(self):
+        print('Goodbye, Dear, you have got amazing {} dress'.format(self.color))
+
+person = MyFirstClass("blue")
+
+person.greeting()
+person.goodbye()
+
